@@ -3,9 +3,13 @@
 2. How to prevent sql injection vulnerability above by
 
 a. improving the flawed code? 
-use placeholders as shown on code above.
+Use placeholders (?) as shown on code above.
 
 b. applying infrastructural tools?
+
+We can use Selenium for automated testing.
+There exist other tools like SQLMap or jSQL.
+
 
 3.How to automate a sql injection security test with CI/CD systems?
 
