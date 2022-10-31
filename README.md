@@ -1,10 +1,12 @@
 1. Assuming you are user 21406f6d-787f-4db2-b02b-d38e3f892133, how to get the private data of user ed8fd34e-3c57-47f9-9cfa-594bb74ca8b5 by sql injection ?
 
-Hacker can enter the link: http://localhost/?user=21406f6d-787f-4db2-b02b-d38e3f892133
+Hacker can enter the link: (http://localhost:3000/?user=jdvbj"%20OR%20"1=1)
 
-This is similar to executing the query with multiple statements:
+<img width="1202" alt="image" src="https://user-images.githubusercontent.com/33653833/199075897-2fea674c-fdf8-4bc7-a7c2-3efcdd7a0722.png">
 
-Or Hacker can use the query 
+This is similar to executing the query: SELECT * from ? where user="jdvbj" OR "1=1"
+Which returns all data stored.
+ 
 
 2. How to prevent sql injection vulnerability above by
 
